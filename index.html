@@ -127,7 +127,7 @@
               
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://youtu.be/sE4cEfhVOdE" target="_blank"
+                <a href="https://youtu.be/IvnvPOSqDug" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -137,7 +137,7 @@
               </span>
 
               <span class="link-block">
-                <a href="https://www.bilibili.com/video/BV1ogrfYvEPe/?spm_id_from=333.999.0.0&vd_source=9bfb836fc9619857eb659fa89996cfa0"
+                <a href="https://www.bilibili.com/video/BV1ZVPze3EkW/"
                     class="external-link button is-normal is-rounded is-dark" target="_blank">
                     <span class="icon">
                       <i class="fab fa-bilibili"></i>
@@ -147,7 +147,7 @@
               </span>
               
               <span class="link-block">
-                <a href="https://x.com/xuxin_cheng/status/1869113429044363346" target="_blank"
+                <a href="https://x.com/ericliuof97" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-twitter"></i>
@@ -176,7 +176,7 @@
       <div class="column is-two-thirds no-bottom-padding">
         <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
           <iframe 
-            src="https://www.youtube.com/embed/sE4cEfhVOdE" 
+            src="https://www.youtube.com/embed/IvnvPOSqDug"
             title="YouTube video player" 
             frameborder="0" 
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid #bbb; border-radius: 10px;" 
@@ -187,29 +187,7 @@
       </div>
     </div>
   </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Static Gait Switching</h2>
-        <tr>
-          <td>
-
-            <div class="row">
-              <div class="col">
-                <!-- <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> xxx </h3> -->
-                  <video autoplay muted loop playsinline controls src="./resources/static_compress.mp4" width="65%"
-                         style="border-radius:10px; "></video>
-
-              </div>
-            </div>
-          </td>
-        </tr>
-      </div> 
-    </div>
-  </div>
+  <p style="text-align: center; " width="60%">  Music Cover: <a href="https://www.youtube.com/watch?v=sGIm0-dQd8M"> Daddy Yankee - Dura</a> </p>
 </section>
 
 <section class="section">
@@ -236,6 +214,37 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Gait Switching</h2>
+        <tr>
+          <td>
+
+            <div class="row">
+              <div class="col">
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Walking, Jumping, Standing + Various Commands </h3>
+                  <video autoplay muted loop playsinline controls src="./resources/static_compress.mp4" width="100%"
+                         style="border-radius:10px; "></video>
+
+              </div>
+              <div class="col">
+
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Hopping Feet </h3>
+                <video autoplay muted loop playsinline controls 
+                       src="./resources/hopping_switch_compress.mp4" width="100%"
+                       style="border-radius:10px;"></video>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </div> 
     </div>
   </div>
 </section>
@@ -334,7 +343,7 @@
           <div class="row">
             <div class="col">
 
-              <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Bendover <i>Walking</i> (Runing) -> Squat <i>Walking</i> </h3>
+              <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"> Bendover <i>Walking</i> (Running) -> Squat <i>Walking</i> </h3>
               <video autoplay muted loop playsinline controls 
                      src="./resources/runs_compress.mp4" width="100%"
                      style="border-radius:10px;"></video>
@@ -476,9 +485,51 @@
     </div>
   </div>
 
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Framework</h2>
+          <tr>
+            <td>
+
+              <div class="row">
+                <div class="col">
+                  <img src="./resources/Framework.png" width="80%"
+                      style="border-radius:10px; "></img>
+                  
+              <p style="text-align: center; " width="60%"> 
+                <b>a): Visualization of parts of commands.</b> The side view (left) highlights the linear velocity, foot swing height, and body pitch commands.<br>
+                The top-right view shows the angular velocity and waist yaw commands, and the bottom-right view shows the body height command.<br>
+                <b>b): Policy inputs/outputs.</b> The policy is provided with commands, proprioceptive observations, the intervention indicator, and outputs all joints of the robots.<br>
+                <b>c): Illustrations of four gaits on the robot without/with external intervention.</b> By default, the policy controls both the upper-body and the lower-body joints.<br>
+                <b>d): External control support.</b> Feasible external control signals can be seamlessly integrated into the robot's behavior without hurting locomotion performance.<br>
+                </p>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Acknowledgments</h2>
+        <div class="content has-text-justified">
+          <p>
+            We thank Jingxiao Chen, Xinyao Li, Liu Xin, and Jiahang Cao for their kind support of upper body control and motion generation.
+            We thank Unitree for their help on the hardware.
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
-
-
 
 
 <section class="section" id="BibTeX">
